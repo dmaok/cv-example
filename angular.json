@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cv-app"
+    }
+  },
+  "defaultProject": "cv-app",
+  "cli": {
+    "analytics": true
+  }
 }
