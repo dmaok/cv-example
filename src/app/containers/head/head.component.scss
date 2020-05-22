@@ -1,0 +1,15 @@
+.head-container {
+  border-bottom: var(--border-bold);
+  padding: var(--gap5x);
+
+  .author-name {
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+
+  .author-meta {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+  }
+}
