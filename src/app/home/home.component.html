@@ -3,6 +3,30 @@
   [meta]="candidate.jobPosition">
 </app-head>
 
+<app-layout>
+  <app-aside>
+    <app-section name="Personal Skills">
+      <ul>
+        <li *ngFor="let skill of personalSkillsList">
+          {{skill}}
+        </li>
+      </ul>
+    </app-section>
+    <app-section name="Contact">
+      <app-contacts [contactsList]="contacts"></app-contacts>
+    </app-section>
+    <app-section name="Familiar with">
+      <app-skills *ngFor="let skill of technicalSkills" [skill]="skill"></app-skills>
+    </app-section>
+  </app-aside>
 
-
-<p>home works!</p>
+  <app-main>
+    <app-section name="About Me">
+      <div [innerHTML]="candidate.aboutInfo"></div>
+    </app-section>
+    <app-section name="Skills Feature">
+      <app-skills-chart [skills]="technicalSkills">
+      </app-skills-chart>
+    </app-section>
+  </app-main>
+</app-layout>
