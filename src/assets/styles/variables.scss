@@ -3,6 +3,28 @@ $bg-main: #fffff0;
 $color-main: #212121;
 
 $font-main: Arial, sans-serif;;
-$font-heading: 'coursive';
+$font-heading: fantasy;
 
 $gap: 5px;
+
+$color-border: #202020;
+
+:root {
+  --bg-main: #fffff0;
+  --color-main: #212121;
+  --font-main: 'Mukta', sans-serif;
+  --font-heading: 'Roboto Condensed', sans-serif;
+  --color-border: #202020;
+
+  --gap: 5px;
+  --gap2x: calc(var(--gap) * 2);
+  --gap3x: calc(var(--gap) * 3);
+  --gap4x: calc(var(--gap) * 4);
+  --gap5x: calc(var(--gap) * 5);
+
+  --width-border-bold: calc(var(--gap) * 2);
+  --width-border-thin: calc(var(--gap) / 2);
+
+  --border-bold: var(--width-border-bold) solid var(--color-border);
+}
+

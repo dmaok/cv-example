@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto+Condensed&display=swap');
+
+body {
+  line-height: 1.4;
+  font-size: 100%;
+  font-family: var(--font-main);
+  color: var(--color-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
