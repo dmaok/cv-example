@@ -1,0 +1,17 @@
+<ul class="list">
+  <li
+    *ngFor="let skill of performanceEvaluation"
+    class="list-item">
+    <div class="skill-description">
+      <div class="skill-title">
+        <span>
+          {{skill.title}}
+        </span>
+        <b>
+          {{skill.value}}
+        </b>
+      </div>
+      <progress [value]="skill.value" max="5"></progress>
+    </div>
+  </li>
+</ul>

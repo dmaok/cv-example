@@ -1,0 +1,26 @@
+::-webkit-progress-bar {
+  background: var(--bg-main);
+}
+
+::-webkit-progress-value {
+  background: var(--color-main);
+}
+
+progress {
+  display: block;
+  color: var(--color-main);
+  width: 100%;
+  background: var(--bg-main);
+  border: var(--border-thin);
+  border-radius: 2px;
+  height: 15px;
+}
+
+.skill-description {
+  margin-bottom: var(--gap2x);
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { Candidate } from 'src/app/models/candidate/candidate';
-import { candidate, skillsList, contacts, skills } from 'src/app/mocks';
-import { Contact } from 'src/app/models/contact/contact';
-import { Skills } from 'src/app/models/skills/skills';
+import { candidate, performanceEvaluation, contacts, skills } from '@mocks/index';
+
+import { Skills } from '@models/skills/skills';
+import { Contact } from '@models/contact/contact';
+import { Candidate } from '@models/candidate/candidate';
+import { SoftSkills } from '@models/soft-skills/soft-skills';
 
 @Component({
   selector: 'app-home',
@@ -13,5 +15,5 @@ export class HomeComponent {
   contacts: Contact[] = contacts;
   candidate: Candidate = candidate;
   technicalSkills: Skills[] = skills;
-  personalSkillsList: string[] = skillsList;
+  performanceEvaluation: SoftSkills[] = performanceEvaluation;
 }

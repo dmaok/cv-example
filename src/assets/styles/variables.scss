@@ -23,8 +23,9 @@ $color-border: #202020;
   --gap5x: calc(var(--gap) * 5);
 
   --width-border-bold: calc(var(--gap) * 2);
-  --width-border-thin: calc(var(--gap) / 2);
+  --width-border-thin: calc(var(--gap) / 2.5);
 
   --border-bold: var(--width-border-bold) solid var(--color-border);
+  --border-thin: var(--width-border-thin) solid var(--color-border);
 }
 

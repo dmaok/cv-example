@@ -9,6 +9,7 @@ import { LayoutModule } from 'src/app/shared/layout/layout.module';
 import { ContactsModule } from 'src/app/shared/contacts/contacts.module';
 import { SkillsModule } from 'src/app/shared/skills/skills.module';
 import { SkillsChartModule } from 'src/app/containers/skills-chart/skills-chart.module';
+import { SoftSkillsModule } from '@shared/soft-skills/soft-skills.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -19,7 +20,8 @@ import { SkillsChartModule } from 'src/app/containers/skills-chart/skills-chart.
     LayoutModule,
     ContactsModule,
     SkillsModule,
-    SkillsChartModule
+    SkillsChartModule,
+    SoftSkillsModule
   ]
 })
 export class HomeModule {}

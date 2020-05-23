@@ -5,12 +5,8 @@
 
 <app-layout>
   <app-aside>
-    <app-section name="Personal Skills">
-      <ul>
-        <li *ngFor="let skill of personalSkillsList">
-          {{skill}}
-        </li>
-      </ul>
+    <app-section name="Performance Evaluation">
+      <app-soft-skills [performanceEvaluation]="performanceEvaluation"></app-soft-skills>
     </app-section>
     <app-section name="Contact">
       <app-contacts [contactsList]="contacts"></app-contacts>

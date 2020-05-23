@@ -1,6 +1,6 @@
-import { Candidate } from 'src/app/models/candidate/candidate';
-import { Contact } from 'src/app/models/contact/contact';
-import { Skills } from 'src/app/models/skills/skills';
+import { Skills } from '@models/skills/skills';
+import { Contact } from '@models/contact/contact';
+import { Candidate } from '@models/candidate/candidate';
 
 const aboutHtml = `<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 <p>Assumenda dolorem dolores eligendi molestias tempore?</p>
@@ -19,17 +19,43 @@ export const candidate = new Candidate({
   jobPosition: 'Javascript Developer'
 });
 
-export const skillsList: string[] = [
-  'Lorem ipsum dolor sit amet',
-  'consectetur adipisicing elit.',
-  'Accusamus aspernatur assumenda',
-  'blanditiis',
-  'corporis delectus',
-  'dicta eius, error itaque laboriosam',
-  'molestiae neque numquam obcaecati',
-  'perferendis quaerat',
-  'quam quidem temporibus',
-  'unde voluptates!'
+export const performanceEvaluation = [
+  {
+    title: 'Responsibility',
+    value: 4.31
+  },
+  {
+    title: 'Customer business focus',
+    value: 4.44
+  },
+  {
+    title: 'Teamwork',
+    value: 4.08
+  },
+  {
+    title: 'Flexibility',
+    value: 4.33
+  },
+  {
+    title: 'Development orientation',
+    value: 4.61
+  },
+  {
+    title: 'Proactivity',
+    value: 4.0
+  },
+  {
+    title: 'Effective communications',
+    value: 4.03
+  },
+  {
+    title: 'Focus on quality',
+    value: 4.17
+  },
+  {
+    title: 'Leadership qualities',
+    value: 4.3
+  }
 ];
 
 export const contacts: Contact[] = [
@@ -60,7 +86,7 @@ export const skills: Skills[] = [
     progress: 0,
     zIndex: 190,
     color: '#f6c40f',
-    startDate: new Date('2016-05-01'),
+    startDate: new Date('2016-05-01')
   },
   {
     name: 'HTML5',
@@ -90,14 +116,14 @@ export const skills: Skills[] = [
     color: '#3fb37f',
     zIndex: 70,
     startDate: new Date('2019-02-20'),
-    finishDate: new Date('2019-07-15'),
+    finishDate: new Date('2019-07-15')
   },
   {
     name: 'Ember.js',
     progress: 0,
     color: '#dc4930',
     zIndex: 140,
-    startDate: new Date('2019-07-15'),
+    startDate: new Date('2019-07-15')
   },
   {
     name: 'React.js',
@@ -105,7 +131,7 @@ export const skills: Skills[] = [
     color: '#5ed5f4',
     zIndex: 70,
     startDate: new Date('2018-07-01'),
-    finishDate: new Date('2018-11-15'),
+    finishDate: new Date('2018-11-15')
   },
   {
     name: 'TypeScript',
@@ -121,7 +147,7 @@ export const skills: Skills[] = [
     color: '#1593ef',
     zIndex: 60,
     startDate: new Date('2019-02-20'),
-    finishDate: new Date('2019-07-15'),
+    finishDate: new Date('2019-07-15')
   },
   {
     name: 'RxJs',
@@ -146,32 +172,32 @@ export const skills: Skills[] = [
   {
     name: 'Git',
     startDate: new Date('2015-06-01'),
-    zIndex: 210,
+    zIndex: 210
   },
   {
     name: 'webpack',
     progress: 0,
     zIndex: 160,
-    startDate: new Date('2018-02-25'),
+    startDate: new Date('2018-02-25')
   },
   {
     name: 'i18n tools',
     progress: 0,
     zIndex: 150,
-    startDate: new Date('2018-02-25'),
+    startDate: new Date('2018-02-25')
   },
   {
     name: 'Jest',
     progress: 0,
     zIndex: 10,
     startDate: new Date('2018-10-01'),
-    finishDate: new Date('2019-03-01'),
+    finishDate: new Date('2019-03-01')
   },
   {
     name: 'Bootstrap',
     progress: 0,
     startDate: new Date('2015-09-01'),
-    zIndex: 200,
+    zIndex: 200
   },
   {
     name: 'jQuery',
@@ -184,13 +210,13 @@ export const skills: Skills[] = [
     name: 'SCSS',
     progress: 0,
     startDate: new Date('2016-06-01'),
-    zIndex: 180,
+    zIndex: 180
   },
   {
     name: 'Redux',
     progress: 0,
     zIndex: 60,
     startDate: new Date('2018-07-01'),
-    finishDate: new Date('2018-11-15'),
-  },
+    finishDate: new Date('2018-11-15')
+  }
 ].map(skill => new Skills(skill));
