@@ -1,5 +1,16 @@
+canvas {
+  filter: grayscale(1);
+  transition: filter .15s;
+}
+
 :host {
   position: relative;
   width: 100%;
   display: flex;
+
+  &:hover {
+    canvas {
+      filter: grayscale(0);
+    }
+  }
 }

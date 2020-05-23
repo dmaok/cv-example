@@ -16,4 +16,11 @@ export class HomeComponent {
   candidate: Candidate = candidate;
   technicalSkills: Skills[] = skills;
   performanceEvaluation: SoftSkills[] = performanceEvaluation;
+
+  get candidateAge(): number {
+    if (!this.candidate?.birthday) return undefined;
+    const msInYear = 1000 * 60 * 60 * 24 * 365;
+    const msDiff = new Date().getTime() - new Date(this.candidate.birthday).getTime();
+    return Math.floor(msDiff / msInYear);
+  }
 }

@@ -2,21 +2,29 @@ import { Skills } from '@models/skills/skills';
 import { Contact } from '@models/contact/contact';
 import { Candidate } from '@models/candidate/candidate';
 
-const aboutHtml = `<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-<p>Assumenda dolorem dolores eligendi molestias tempore?</p>
-<p>Atque consequuntur delectus dolore esse hic in incidunt iste laborum placeat,
-quas totam velit voluptates voluptatum? Atque consequuntur delectus dolore esse hic in incidunt iste laborum placeat,
-quas totam velit ore esse hic in incidunt iste laborum placeat,
-quas totam velit voluptates voluptatum? Atque consequuntur delee laborum placeat,
-qua velit voluptates voluptatum? Atque consequuntur delectus dolore esse hic in incidunt iste laborum placeat,
-quas totam voluptates voluptatum?</p>`;
+const aboutHtml = `<p>Hi! I'm a javascript developer with 3 and a half years of experience.</p>
+<p>
+I specialize in building scalable and maintainable web applications.
+I'm looking for a job in a stable, growing company.
+I expect long-term collaboration with interesting projects.
+</p>
+<p>
+I can communicate efficiently, work in a team, split big tasks into smaller pieces and quickly crunch through them.
+I prefer clear, simple, and readable code.
+Passionate about self-learning, innovation, and usability.
+Familiar with the Agile and Scrum methodology.
+Calm, adequate, responsible, friendly, attentive, forward-looking.
+I always try to do my best.
+</p>
+`;
 
 export const candidate = new Candidate({
   firstName: 'Dmytro',
   lastName: 'Kovtun',
-  birthday: '28.06.1991',
+  birthday: '1991-06-28',
   aboutInfo: aboutHtml,
-  jobPosition: 'Javascript Developer'
+  jobPosition: 'Javascript Developer',
+  city: 'Kyiv, Ukraine'
 });
 
 export const performanceEvaluation = [

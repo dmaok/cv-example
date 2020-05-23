@@ -5,14 +5,22 @@
 
 <app-layout>
   <app-aside>
-    <app-section name="Performance Evaluation">
-      <app-soft-skills [performanceEvaluation]="performanceEvaluation"></app-soft-skills>
+    <app-section name="Main">
+      <div *ngIf="candidate.city">
+        City: {{candidate.city}}
+      </div>
+
+      <div *ngIf="candidateAge">
+        Age: {{candidateAge}} y.o.
+      </div>
     </app-section>
+
     <app-section name="Contact">
       <app-contacts [contactsList]="contacts"></app-contacts>
     </app-section>
-    <app-section name="Familiar with">
-      <app-skills *ngFor="let skill of technicalSkills" [skill]="skill"></app-skills>
+
+    <app-section name="Performance Evaluation">
+      <app-soft-skills [performanceEvaluation]="performanceEvaluation"></app-soft-skills>
     </app-section>
   </app-aside>
 
