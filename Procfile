@@ -1,1 +1,1 @@
-web: ng build --prod && cd server && npm run
+web: cd server & npm install & npm start
