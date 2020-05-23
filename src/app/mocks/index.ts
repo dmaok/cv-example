@@ -61,15 +61,23 @@ export const performanceEvaluation = [
 export const contacts: Contact[] = [
   {
     name: 'LinkedIn',
-    link: 'http://linkedin.com'
+    link: 'https://www.linkedin.com/in/dmytro-kovtun-476a96128/'
+  },
+  {
+    name: 'Telegram',
+    link: 'https://t.me/dmaok',
+  },
+  {
+    name: '+380 (93) 676 26 46',
+    link: 'tel:+3809367632646',
   },
   {
     name: 'Skype',
-    link: 'skypeLink'
+    link: 'skype:d.ma1991?chat'
   },
   {
-    name: 'Phone',
-    link: '+3809367632646'
+    name: 'GitHub',
+    link: 'https://github.com/dmaok',
   }
 ];
 

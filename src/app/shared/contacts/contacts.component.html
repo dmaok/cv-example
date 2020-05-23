@@ -1,1 +1,9 @@
-<app-contacts-item *ngFor="let item of contactsList" [contact]="item"></app-contacts-item>
+<ul class="list">
+  <li
+    *ngFor="let contact of contactsList"
+    class="list-item">
+    <a [href]="contact.link | safe: 'url'" target="_blank">
+      {{contact.name}}
+    </a>
+  </li>
+</ul>
